@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link href="lab.js" rel="lab">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab Reports</title>
+</head>
+<style>
+  * {box-sizing:border-box}
+
+        /* Navbar CSS */
+        .topnav {
+    background-color: #333;
+    overflow: hidden;
+    width: 100%;
+    margin: 0;
+}
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav a.active  {
+  background-color: #04AA6D;
+  color: white;
+}
+
+.topnav-right {
+  float: right;
+}
+
+  /* PAtient */
+input[type=text] {
+  width: 48%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+input[type=number] {
+  width: 48%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+input[type=submit] {
+  background-color: #04AA6D;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-left: 15%;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+</style>
+<body>
+    <section >
+        <div class="topnav">
+            <a class="active" href="#logo">Z+</a>
+            
+            <div class="topnav-right">
+             <a href="index.html">Home</a>
+             <a href="aboutus.html">About</a>
+             <a class="active" href="#">Patient</a>
+             <a href="#">Message Doctor</a>
+              <a href="contact.html">Contact us</a>
+            </div>
+          </div>
+        </section>
+  
+        <section style="margin-left: 18%; margin-top: 3%;">
+          <form>
+            <label for="name">Patient Name</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <input type="text" id="name" name="patientname" placeholder="Enter patient's name"><br>
+            <label for="Phone">Phone Number</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <input type="number" id="Phone" name="Phone" placeholder="Enter patient's Phone number...">
+          </form>
+
+          <input type="submit" value="Patient Detail">
+          <input type="submit" value="Test Detail">
+
+        </section>
+        <img src="folder.png" style="height: 10%; width: 10%; margin-top: 5%; margin-left: 40%;"><br>
+        <section style="margin-top: 3%; margin-left: 30%;">
+          <input type="submit" value="Upload Report">
+        </section>
+
+</body>
+</html>
